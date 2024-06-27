@@ -1,0 +1,65 @@
+.code-editor-container {
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.code-editor {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #2d2d2d;
+    height: 400px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.code-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: transparent;
+    caret-color: white;
+    resize: none;
+    z-index: 1;
+    white-space: pre;
+    overflow: auto;
+}
+
+.code-output {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #f8f8f2;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.code-output code {
+    display: block;
+}
