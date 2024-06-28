@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Simple Code Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple code editor built using React, Prism.js for syntax highlighting, and a Textarea HTML element for user input. The editor allows users to write and edit code with syntax highlighting for JavaScript.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Syntax Highlighting**: Utilizes Prism.js to provide syntax highlighting for JavaScript code.
+- **Initial Code Snippet**: Pre-fills the editor with a basic React application code snippet.
+- **Live Preview**: Displays the highlighted code as the user types.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: A JavaScript library for building user interfaces.
+- **Prism.js**: A lightweight, extensible syntax highlighter.
+- **CSS**: For styling the code editor component.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 12 or later)
+- npm (version 6 or later) or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/ShainaShilpi/code-editor.git
+   cd code-editor
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**:
 
-### `npm run eject`
+   ```bash
+   npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Running the Project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To start the development server, run:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This will start the development server and open the project in your default web browser. If it doesn't open automatically, navigate to http://localhost:3000 in your browser.
 
-## Learn More
+### Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **src/components/CodeEditor.js**: Contains the main code editor component.
+- **src/components/CodeEditor.css**: Contains the styles for the code editor component.
+- **public/index.html**: The HTML template.
+- **src/index.js**: The JavaScript entry point.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Code Explanation
 
-### Code Splitting
+**CodeEditor Component (src/components/CodeEditor.js)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The **'CodeEditor'** component manages the code state and handles user input. It uses Prism.js to highlight the syntax and displays the code in a **'textarea'** and a **'pre'** element.
 
-### Analyzing the Bundle Size
+- **State Management**: Uses React's **'useState'** hook to manage the code input by the user.
+- **Syntax Highlighting**: Uses Prism.js to highlight the code as the user types.
+- **JSX Structure**: Renders a container with a header, a **'textarea'** for input, and a **'pre'** element to display the highlighted code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Styles (src/components/CodeEditor.css)**
 
-### Making a Progressive Web App
+The CSS file defines styles for the code editor, ensuring a clean and consistent layout:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Container**: Sets width, margin, and font styles.
+- **Header**: Styles the header text.
+- **Editor**: Styles the code editor container, textarea, and pre element.
 
-### Advanced Configuration
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Upon loading the application, you will see a pre-filled code editor with a basic React application. You can type your code into the editor, and it will automatically highlight the syntax.
 
-### Deployment
+### Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/ShainaShilpi/code-editor/assets/98258789/fa23fe43-832a-4a95-b5ec-eb5282424075)
